@@ -47,4 +47,4 @@ class Bank:
         """Add funds to the named account"""
         account = self.get_account(name)
         now = datetime.now()
-        self._transactions.add(Transaction(account, now, amount))
+        self._transactions.add(Transaction(account, now, float(amount)))
